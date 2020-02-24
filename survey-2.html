@@ -16,27 +16,37 @@ Include all form input types we've covered so far
     <div class="container">
       <h1>Survey-2</h1>
 
-      <form id="name">
+      <form id="formOne">
+
         <div class="form-group">
           <label for="yourname">Input your Name:</label>
           <input id="yourname" type="text">
         </div>
+
+        <label for="beverage">Favorite Drink:</label>
+        <select class="form-control" id="beverage">
+          <option></option>
+          <option value="coffee">Coffee</option>
+          <option value="tea">Tea</option>
+          <option value="kombucha">Kombucha</option>
+          <option value="water">Water</option>
+        </select>
+
+        <label for="food">Favorite Food:</label>
+        <select class="form-control" id="food">
+          <option></option>
+          <option value="hamburger">Hamburger</option>
+          <option value="steak">Steak</option>
+          <option value="salad">Salad</option>
+          <option value="fish">Fish</option>
+        </select>
+
+        <button type="submit" name="button">Submit!</button>
+
       </form>
-
-      <select class="form-control" id="beverage">
-        <option value="1">Coffee</option>
-        <option value="2">Tea</option>
-        <option value="3">Kombucha</option>
-        <option value="4">Water</option>
-      </select>
-
-      <select class="form-control" id="food">
-        <option value="1">Hamburger</option>
-        <option value="2">Steak</option>
-        <option value="3">Salad</option>
-        <option value="4">Fish</option>
-      </select>
-
+      <div id="output">
+        <p></p>
+      </div>
     </div>
   </body>
 </html>
